@@ -95,16 +95,13 @@ angular.module('confusionApp')
 				function($scope, $stateParams, menuFactory, corporateFactory) {
 					
 						//row-1 on home.html is the featured 'dish'
-						var myDshNdx = 2;
-						$scope.dish = menuFactory.getDish(myDshNdx);
+						$scope.dish = menuFactory.getDish(0);
 					
 						//row-2 on home.html is the featured 'promotion'
-						var myPromoNdx = 0;
-						$scope.promotion= menuFactory.getPromotion(myPromoNdx);
+						$scope.promotion= menuFactory.getPromotion(0);
 					
 						//row-3 on home.html is the featured 'executive chef'
-						var myChefNdx = 3;
-						$scope.corpFac = corporateFactory.getLeader(myChefNdx);
+						$scope.corpFac = corporateFactory.getLeader(3);
 			
 		}])
 

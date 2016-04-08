@@ -248,10 +248,6 @@ angular.module('confusionApp')
                 
             ];
      
-            // Implement two functions, one named getLeaders,
-            // the other named getLeader(index)
-            // Remember this is a factory not a service
-						// me 11:55am-3-5-16/Saturday == FACTORY not Service ==
 						corpfac.getLeaders = function() {
 							return leadership;
 						};
@@ -260,7 +256,6 @@ angular.module('confusionApp')
 							return leadership[index];
 						};
 						
-						//note: 2? functions now attached to below object (getLeaders & getLeader)
 						return corpfac;					
     
         })
